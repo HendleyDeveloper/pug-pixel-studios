@@ -1,0 +1,25 @@
+/* Angular Navbar with Shadow */
+.navbar-custom {
+    background: #33658a; /* Main navbar color */
+    padding: 3rem 1rem; /* Increased height */
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    z-index: 10;
+}
+
+/* Content Styling */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Angular Footer - Flipped */
+.footer-custom {
+    background: #2f4858; /* Dark footer */
+    color: white;
+    padding: 3rem 1rem;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    text-align: center;
+}
