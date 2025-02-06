@@ -22,4 +22,4 @@ window.addEventListener("scroll", function () {
       title.style.fontSize = "36px"; // Restore title size
       links.forEach(link => (link.style.fontSize = "18px")); // Restore nav links size
     }
-  });
+});

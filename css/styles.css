@@ -51,6 +51,14 @@ header {
   color: #ff5400 !important;
 }
 
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes it white */
+}
+
+.navbar-toggler {
+  border-color: white; /* Ensures the border is visible */
+}
+
 .about {
   background-color: #0077b6;
 }
@@ -147,8 +155,18 @@ header {
 }
 
 /*----------Media Queries*/
+@media (max-width: 576px) {
+  .pps-title {
+    font-size: 18px !important; /* Further reduce the font size */
+    max-width: 100%; /* Ensure it doesn’t exceed the screen width */
+    white-space: normal !important; /* Allow wrapping */
+    word-wrap: break-word !important; /* Force long words to break */
+    text-align: center; /* Center the text to avoid odd cutoffs */
+  }
+}
+
 @media (min-width: 576px) {
-  .profile {
+    .profile {
     height: 60vw;
     width: 60vw;
   }
