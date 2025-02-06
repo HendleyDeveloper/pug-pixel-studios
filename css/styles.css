@@ -1,29 +1,80 @@
+/*----------Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*----------End font import*/
 
 body,
 html {
   height: 100%;
-  background-color: #909cc2;
+  background-color: #023e8a;
+}
+
+header {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .navbar {
-  background-color: #084887;
+  position: fixed; /* Keeps the navbar at the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures navbar stays on top */
+  background: rgba(3, 4, 94, 0.8); /* Glass effect */
+  backdrop-filter: blur(10px); /* Blurs the background */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  padding: 20px 0; /* Default padding */
+}
+
+.pps-title {
+  font-family: "Doto", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #ff5400;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.pps-title:hover {
+  color: #ff9100;
+}
+
+.nav-link {
+  transition: font-size 0.3s ease-in-out;
+}
+
+.nav-item a {
+  font-family: "Noto", sans-serif;
+  font-size: 18px;
+  color: #0096c7 !important;
+}
+
+.nav-item a:hover {
+  color: #ff5400 !important;
 }
 
 .about {
-  background-color: #F7F5FB;
+  background-color: #0077b6;
+}
+
+.doto {
+  font-family: "Doto", sans-serif;
+  font-weight: bold;
+}
+
+.pps-font {
+  font-family: "Noto", sans-serif;
 }
 
 .footer {
-  background-color: #084887;
+  background-color: #03045e;
 }
 
 .bg-gradient-primary-to-secondary {
   background: #084887;
-  background: linear-gradient(135deg, #084887 0%, #f58a07 100%);
+  background: linear-gradient(135deg, #03045e 0%, #ff5400 100%);
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #084887 0%, #f58a07 100%);
+  background: -webkit-linear-gradient(315deg, #ff5400 0%, #03045e 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -65,7 +116,7 @@ html {
   top: 4vw;
 }
 .profile .dots-1 svg {
-  fill: #fff;
+  fill: #0096c7;
 }
 .profile .dots-2 {
   position: absolute;
@@ -74,7 +125,7 @@ html {
   top: 6.05vw;
 }
 .profile .dots-2 svg {
-  fill: #1e30f3;
+  fill: #ff6d00;
 }
 .profile .dots-3 {
   position: absolute;
@@ -83,7 +134,7 @@ html {
   bottom: 6.05vw;
 }
 .profile .dots-3 svg {
-  fill: #fff;
+  fill: #00b4d8;
 }
 .profile .dots-4 {
   position: absolute;
@@ -92,9 +143,10 @@ html {
   bottom: 4vw;
 }
 .profile .dots-4 svg {
-  fill: #1e30f3;
+  fill: #ff9100;
 }
 
+/*----------Media Queries*/
 @media (min-width: 576px) {
   .profile {
     height: 60vw;
@@ -195,3 +247,4 @@ html {
     left: -2vw;
   }
 }
+/*----------End Media Queries*/
