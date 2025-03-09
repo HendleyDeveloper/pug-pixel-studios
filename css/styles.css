@@ -8,6 +8,11 @@ html {
   background-color: #023e8a;
 }
 
+main {
+  flex-grow: 1;
+  background-color: #0077b6;
+}
+
 .navbar-pad {
   padding-top: 120px;
   padding-bottom: 120px;
