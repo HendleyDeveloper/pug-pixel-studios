@@ -90,7 +90,7 @@ html {
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(315deg, #ff5400 0%, #03045e 100%);
+  background: -webkit-linear-gradient(315deg, #ff9e00 0%, #ff5400 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -160,6 +160,11 @@ html {
 }
 .profile .dots-4 svg {
   fill: #ff9100;
+}
+
+.profile-picture-background {
+  background: url('../assets/img/pexels-harold-vasquez-853421-2653362.jpg') no-repeat center center;
+  width: 100%;
 }
 
 /*----------Media Queries*/
