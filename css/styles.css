@@ -67,6 +67,14 @@ html {
   transform: scale(1.2); /* Makes text appear larger without affecting layout */
 }
 
+.social-links {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links:hover {
+  transform: scale(1.2);
+}
+
 .about {
   background-color: #0077b6;
 }
