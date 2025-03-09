@@ -183,7 +183,11 @@ html {
 /*----------Our Work*/
 
 .ow-background {
-  background: #084887;
+  background-color: #084887;
+}
+
+.card-background {
+  background-color: #ff6d00;
 }
 
 
