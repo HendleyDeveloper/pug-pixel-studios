@@ -180,6 +180,13 @@ html {
   transform: scale(1.2);
 }
 
+/*----------Our Work*/
+
+.ow-background {
+  background: #084887;
+}
+
+
 /*----------Media Queries*/
 @media (max-width: 576px) {
   .pps-title {
